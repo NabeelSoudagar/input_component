@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexible Input Component</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div class="container">
+
+    
+    <div class="input-group outlined">
+      <label>Username</label>
+      <div class="input-wrapper">
+        <input type="text" placeholder="Enter username" />
+        <button class="clear-btn" title="Clear">✕</button>
+      </div>
+      <small class="helper">This will be your public name</small>
+    </div>
+
+    
+    <div class="input-group filled">
+      <label>Password</label>
+      <div class="input-wrapper">
+        <input type="password" placeholder="Enter password" />
+        <button class="toggle-btn" title="Show/Hide">👁</button>
+      </div>
+    </div>
+    <div class="input-group ghost">
+      <label>Search</label>
+      <div class="input-wrapper">
+        <input type="text" placeholder="Type to search..." />
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    
+    <div class="input-group outlined invalid">
+      <label>Email</label>
+      <div class="input-wrapper">
+        <input type="email" placeholder="you@example.com" />
+      </div>
+      <small class="error">Invalid email address</small>
+    </div>
+    <button id="themeToggle" class="theme-btn">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
